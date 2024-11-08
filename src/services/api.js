@@ -8,6 +8,6 @@ export const getAllProducts = async () => {
 };
 
 export const getCategories = async () => {
-  const response = await axios.get(`${BASE_URL}/categories`);
+  const response = await axios.get(`${BASE_URL}/products/category-list`);
   return response.data;
 };
