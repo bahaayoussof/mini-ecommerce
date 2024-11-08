@@ -18,14 +18,14 @@ const Dashboard = () => {
 
   if (isError) content = <div>Error while loading products.</div>;
 
-  // if (data) {
-  content = (
-    <>
-      <CategoryFilter setSelectedCategory={setSelectedCategory} />
-      <ProductList products={filteredProducts} />
-    </>
-  );
-  // }
+  if (data) {
+    content = (
+      <>
+        <CategoryFilter setSelectedCategory={setSelectedCategory} />
+        <ProductList products={filteredProducts} />
+      </>
+    );
+  }
 
   return <div className="p-4 flex flex-col justify-center">{content}</div>;
 };

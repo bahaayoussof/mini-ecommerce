@@ -1,14 +1,12 @@
 import { useState } from "react";
 import ProductModal from "./ProductModal";
+import FavoriteButton from "./FavoriteButton";
 
 const ProductCard = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div
-      className="bg-white shadow-lg rounded-lg p-4"
-      onClick={() => setIsModalOpen(!isModalOpen)}
-    >
+    <div className="bg-white shadow-lg rounded-lg p-4 ">
       <p className="text-gray-600 bg-gray-100 px-2 py-1 rounded-md font-semibold w-fit">
         {product.category}
       </p>
@@ -27,6 +25,8 @@ const ProductCard = ({ product }) => {
         <button className="text-gray-500" onClick={() => setIsModalOpen(true)}>
           View Details
         </button>
+
+        <FavoriteButton product={product} />
       </div>
 
       {isModalOpen && (
