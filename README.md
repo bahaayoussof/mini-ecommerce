@@ -3,10 +3,11 @@
 Mini E-commerce is a simple e-commerce application built with Vite, React, and other modern web technologies. This README will guide you through the setup and provide details on the technology stack.
 
 ## Table of Contents
+
 - [Project Overview](#project-overview)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Getting Started](#getting-started)
+- [Getting Started](#Steps_to_Clone_and_Install)
 
 ## Project Overview
 
@@ -29,6 +30,7 @@ This project uses the following technologies and libraries:
 ### Prerequisites
 
 Ensure you have the following installed:
+
 - **Node.js**
 - **Git**
 - **Vite**
@@ -37,13 +39,17 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mini-ecommerce.git
+   git clone https://github.com/bahaayoussof/mini-ecommerce.git
+   ```
 2. Navigate to the dir:
    ```bash
-   cd mini_e-commerce
+   cd mini-ecommerce
+   ```
 3. install dependencies:
    ```bash
    npm install
+   ```
 4. run the project:
    ```bash
    npm run dev
+   ```
