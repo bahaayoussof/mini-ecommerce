@@ -13,7 +13,8 @@ const ProductCard = ({ product }) => {
       <img
         src={product.images[0]}
         alt={product.title}
-        className="w-full h-64 object-contain rounded"
+        className="w-full h-64 object-contain rounded cursor-pointer"
+        onClick={() => setIsModalOpen(!isModalOpen)}
       />
 
       <div className="flex justify-between items-center">
