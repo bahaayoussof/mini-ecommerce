@@ -1,6 +1,7 @@
-const InfoComponent = ({ info }) => {
+const InfoComponent = ({ info, icon }) => {
   return (
-    <div className="flex h-20 items-end justify-center font-bold text-lg text-gray-500">
+    <div className="flex h-72 gap-2 items-center justify-center font-bold text-lg text-gray-500">
+      {icon}
       <h2>{info}</h2>
     </div>
   );
